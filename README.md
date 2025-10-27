@@ -34,3 +34,18 @@ Easily manage your daily tasks with features like search, filters, due dates, an
 - 📱 **Responsive Design** for all screens  
 
 ---
+## 🧰 Installation & Setup
+
+```bash
+# 1️⃣ Clone this repository
+git clone https://github.com/your-username/todo-list-react.git
+
+# 2️⃣ Move into the project folder
+cd todo-list-react
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Run the development server
+npm run dev
+```
