@@ -63,3 +63,37 @@ src/
 ├── App.css                # Styles and theme handling
 └── main.jsx               # Entry point
 ```
+## 🌈 Theme Modes
+
+- 🌟 Neon Mode — Vibrant gradients, glowing backgrounds, and glassmorphism effects
+
+- 🌙 Dark Mode — Minimal, elegant, and distraction-free
+
+Easily toggle between them using the “Neon / Dark” button.
+
+💾 Local Storage Integration
+
+Your:
+
+✅ Todos
+
+🧩 Theme preference
+
+are automatically saved and reloaded on page refresh — no backend required!
+
+📸 Preview
+
+(Add screenshots or GIFs of your app here)
+Example:
+
+![Neon Todo App](./screenshot.png)
+
+👨‍💻 Author
+
+Md Saif Ali
+🔗 GitHub
+ • LinkedIn
+
+🪶 License
+
+This project is licensed under the MIT License — free to use and modify.
