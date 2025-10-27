@@ -51,3 +51,15 @@ npm run dev
 ```
 Now open 👉 http://localhost:5173
  to view it in your browser.
+## 🧩 Project Structure
+```bash
+src/
+├── components/
+│   ├── TodoForm.jsx       # Add/Search tasks + due date
+│   └── TodoItem.jsx       # Task display, edit, delete
+├── contexts/
+│   └── TodoContext.jsx    # Context API for global todo state
+├── App.jsx                # Main App logic + theme + filters
+├── App.css                # Styles and theme handling
+└── main.jsx               # Entry point
+```
