@@ -88,12 +88,7 @@ Example:
 
 ![Neon Todo App](./screenshot.png)
 
-👨‍💻 Author
 
-Md Saif Ali
-🔗 GitHub
- • LinkedIn
-
-🪶 License
+## 🪶 License
 
 This project is licensed under the MIT License — free to use and modify.
