@@ -22,3 +22,15 @@ Easily manage your daily tasks with features like search, filters, due dates, an
 </p>
 
 ---
+## 🌟 Features
+
+- 🧠 **Smart Context API** – Global state management  
+- 📝 **Add, Edit, Delete, Complete** tasks  
+- 📅 **Set Due Dates** with datetime picker  
+- 🔍 **Search & Filter** (All / Active / Completed)  
+- 💾 **Local Storage** – Auto-save tasks & theme  
+- 🎨 **Theme Toggle:** Neon ✨ / Dark 🌙  
+- ⚡ **Vite-powered** fast performance  
+- 📱 **Responsive Design** for all screens  
+
+---
