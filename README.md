@@ -38,6 +38,7 @@ Easily manage your daily tasks with features like search, filters, due dates, an
 
 ![Neon Todo App](https://github.com/TechFlies/To-Do-List-React/blob/4d89d54322bc2b20128ba24cfaac48ffab792b43/Screenshot%202025-10-27%20164401_edited.png)
 
+---
 ## 🧰 Installation & Setup
 
 ```bash
@@ -55,6 +56,8 @@ npm run dev
 ```
 Now open 👉 http://localhost:5173
  to view it in your browser.
+
+---
 ## 🧩 Project Structure
 ```bash
 src/
@@ -67,6 +70,7 @@ src/
 ├── App.css                # Styles and theme handling
 └── main.jsx               # Entry point
 ```
+---
 ## 🌈 Theme Modes
 
 - 🌟 Neon Mode — Vibrant gradients, glowing backgrounds, and glassmorphism effects
@@ -75,6 +79,7 @@ src/
 
 Easily toggle between them using the “Neon / Dark” button.
 
+---
 ## 💾 Local Storage Integration
 
 Your:
