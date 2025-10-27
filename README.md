@@ -34,6 +34,10 @@ Easily manage your daily tasks with features like search, filters, due dates, an
 - 📱 **Responsive Design** for all screens  
 
 ---
+## 📸 Preview
+
+![Neon Todo App](./screenshot.png)
+
 ## 🧰 Installation & Setup
 
 ```bash
