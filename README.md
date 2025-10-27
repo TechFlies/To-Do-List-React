@@ -81,14 +81,7 @@ Your:
 
 are automatically saved and reloaded on page refresh — no backend required!
 
-📸 Preview
-
-(Add screenshots or GIFs of your app here)
-Example:
-
-![Neon Todo App](./screenshot.png)
-
-
+---
 ## 🪶 License
 
 This project is licensed under the MIT License — free to use and modify.
