@@ -36,7 +36,7 @@ Easily manage your daily tasks with features like search, filters, due dates, an
 ---
 ## 📸 Preview
 
-![Neon Todo App](./screenshot.png)
+![Neon Todo App](https://github.com/TechFlies/To-Do-List-React/blob/4d89d54322bc2b20128ba24cfaac48ffab792b43/Screenshot%202025-10-27%20164401_edited.png)
 
 ## 🧰 Installation & Setup
 
