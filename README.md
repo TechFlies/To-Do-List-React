@@ -71,13 +71,13 @@ src/
 
 Easily toggle between them using the “Neon / Dark” button.
 
-💾 Local Storage Integration
+## 💾 Local Storage Integration
 
 Your:
 
-✅ Todos
+- ✅ Todos
 
-🧩 Theme preference
+- 🧩 Theme preference
 
 are automatically saved and reloaded on page refresh — no backend required!
 
