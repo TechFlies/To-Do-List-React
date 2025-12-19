@@ -77,9 +77,9 @@ function App() {
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
       <div
-        className={`min-h-screen transition-colors py-12 ${
+        className={`min-h-screen transition-colors py-12 bg-fixed bg-center ${
           theme === 'neon'
-            ? 'relative text-white'
+            ? 'relative text-white bg-gradient-to-br from-slate-900/70 via-indigo-900/30 to-black/20'
             : 'bg-slate-950 text-slate-100'
         } flex items-center justify-center`}
       >
@@ -98,7 +98,7 @@ function App() {
           <div
             className={`relative overflow-hidden ${
               theme === 'neon'
-                ? 'rounded-[26px] border border-white/20 bg-slate-900/80 backdrop-blur-2xl shadow-[0_25px_90px_-25px_rgba(236,72,153,.35),0_15px_60px_-30px_rgba(34,211,238,.25)]'
+                ? 'rounded-[26px] border border-white/20 bg-gradient-to-br from-slate-900/60 via-indigo-900/30 to-cyan-900/20 backdrop-blur-2xl shadow-[0_40px_120px_-40px_rgba(99,102,241,.18),0_25px_80px_-30px_rgba(16,185,129,.12)] text-slate-100'
                 : 'rounded-2xl border border-white/10 bg-white/5 backdrop-blur shadow-2xl shadow-black/30'
             }`}
           >
