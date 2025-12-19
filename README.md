@@ -61,6 +61,7 @@ Now open 👉 http://localhost:5173
  to view it in your browser.
 
 ---
+
 ## 🧩 Project Structure
 ```bash
 src/
