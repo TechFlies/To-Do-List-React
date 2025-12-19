@@ -140,7 +140,7 @@ function App() {
                     setTheme((t) => (t === 'neon' ? 'dark' : 'neon'))
                   }
                 >
-                  {theme === 'neon' ? '🌟 Neon' : '🌙 Dark'}
+                  {theme === 'neon' ? '🌟' : '🌙'}
                 </button>
               </div>
 
