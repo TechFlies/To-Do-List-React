@@ -22,6 +22,7 @@ Easily manage your daily tasks with features like search, filters, due dates, an
 </p>
 
 ---
+
 ## 🌟 Features
 
 - 🧠 **Smart Context API** – Global state management  
