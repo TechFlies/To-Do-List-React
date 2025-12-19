@@ -97,6 +97,7 @@ Your:
 are automatically saved and reloaded on page refresh — no backend required!
 
 ---
+
 ## 🪶 License
 
 This project is licensed under the MIT License — free to use and modify.
