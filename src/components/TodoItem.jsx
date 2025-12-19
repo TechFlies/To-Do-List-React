@@ -8,6 +8,12 @@ function TodoItem({ todo }) {
 
   const { updateTodo, deleteTodo, toggleComplete } = useTodo();
 
+  const displayTextClass = todo.completed
+    ? 'line-through text-slate-400'
+    : isTodoEditable
+    ? 'text-current'
+    : 'text-black font-bold';
+
   const editTodo = () => {
     const next = todoMsg.trim();
     if (!next) return;
@@ -21,7 +27,7 @@ function TodoItem({ todo }) {
 
   return (
     <div
-      className={`group flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-lg shadow-black/20 transition duration-300 ${
+      className={`group flex items-center gap-3 rounded-xl border border-white/10 bg-gradient-to-r from-white/5 to-white/3 px-4 py-3 shadow-[0_10px_30px_rgba(2,6,23,0.5)] transition-transform duration-200 hover:scale-[1.01] ${
         todo.completed ? 'opacity-60' : ''
       }`}
     >
@@ -37,11 +43,9 @@ function TodoItem({ todo }) {
       <div className="flex-1">
         <input
           type="text"
-          className={`w-full bg-transparent text-slate-100 placeholder:text-slate-400/70 outline-none rounded-md px-2 py-1 border transition ${
-            isTodoEditable
-              ? 'border-fuchsia-400 focus:ring-4 focus:ring-fuchsia-500/20'
-              : 'border-transparent'
-          } ${todo.completed ? 'line-through text-slate-400' : ''}`}
+          className={`w-full bg-transparent placeholder:text-slate-200/70 outline-none rounded-md px-2 py-1 border transition ${
+            isTodoEditable ? 'border-fuchsia-400 focus:ring-4 focus:ring-fuchsia-500/20' : 'border-transparent'
+          } ${displayTextClass}`}
           value={todoMsg}
           onChange={(e) => setTodoMsg(e.target.value)}
           readOnly={!isTodoEditable}
@@ -49,7 +53,7 @@ function TodoItem({ todo }) {
 
         {/* Due Date */}
         {todo.due && !isTodoEditable && (
-          <div className="text-xs text-slate-300/80 mt-1 flex items-center gap-1">
+          <div className="text-xs text-slate-400 mt-1 flex items-center gap-1">
             <span>📅</span>
             <span>Due: {new Date(todo.due).toLocaleString()}</span>
           </div>
@@ -62,7 +66,7 @@ function TodoItem({ todo }) {
               type="datetime-local"
               value={localDue}
               onChange={(e) => setLocalDue(e.target.value)}
-              className="rounded-full bg-white/10 text-slate-100 border border-white/15 px-3 py-1.5 outline-none focus:ring-2 focus:ring-cyan-500/25 focus:border-cyan-400 text-xs w-full"
+              className="rounded-full bg-white/10 text-slate-400 border border-white/15 px-3 py-1.5 outline-none focus:ring-2 focus:ring-cyan-500/25 focus:border-cyan-400 text-xs w-full"
             />
           </div>
         )}
@@ -70,7 +74,7 @@ function TodoItem({ todo }) {
 
       {/* Edit/Save Button */}
       <button
-        className="inline-flex w-10 h-10 rounded-full text-sm border border-white/15 justify-center items-center bg-gradient-to-r from-fuchsia-500/80 to-cyan-500/80 hover:from-fuchsia-500 hover:to-cyan-500 active:from-fuchsia-600 active:to-cyan-600 text-white shrink-0 disabled:opacity-40 transition focus:outline-none focus:ring-2 focus:ring-fuchsia-400/30"
+        className="inline-flex w-10 h-10 rounded-full text-sm border border-transparent justify-center items-center bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-white shrink-0 hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-fuchsia-400/30"
         onClick={() => {
           if (todo.completed) return;
           if (isTodoEditable) {
@@ -85,7 +89,7 @@ function TodoItem({ todo }) {
 
       {/* Delete Button */}
       <button
-        className="inline-flex w-10 h-10 rounded-full text-sm border border-white/15 justify-center items-center bg-white/10 hover:bg-rose-500/20 active:bg-rose-500/25 hover:border-rose-400 shrink-0 transition focus:outline-none focus:ring-2 focus:ring-rose-400/30"
+        className="inline-flex w-10 h-10 rounded-full text-sm border border-transparent justify-center items-center bg-rose-500/90 text-white hover:scale-105 transition-transform shrink-0 focus:outline-none focus:ring-2 focus:ring-rose-400/30"
         onClick={() => deleteTodo(todo.id)}
         aria-label="Delete"
       >
