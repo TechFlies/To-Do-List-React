@@ -75,6 +75,7 @@ src/
 └── main.jsx               # Entry point
 ```
 ---
+
 ## 🌈 Theme Modes
 
 - 🌟 Neon Mode — Vibrant gradients, glowing backgrounds, and glassmorphism effects
@@ -84,6 +85,7 @@ src/
 Easily toggle between them using the “Neon / Dark” button.
 
 ---
+
 ## 💾 Local Storage Integration
 
 Your:
