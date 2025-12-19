@@ -22,7 +22,7 @@ function TodoForm({ query, setQuery }) {
           <input
             type="text"
             placeholder="Add a task..."
-            className="w-full rounded-full bg-white/10 text-slate-100 placeholder:text-slate-300/70 border border-white/15 pl-12 pr-5 py-4 text-base outline-none focus:ring-4 focus:ring-fuchsia-500/25 focus:border-fuchsia-400 shadow-inner shadow-black/20"
+            className="w-full rounded-full bg-gradient-to-r from-white/5 to-white/3 text-black font-bold placeholder:text-slate-400/60 border border-white/10 pl-12 pr-5 py-4 text-base outline-none focus:ring-4 focus:ring-fuchsia-500/30 focus:border-fuchsia-400 shadow-lg backdrop-blur-sm"
             value={todo}
             onChange={(e) => setTodo(e.target.value)}
           />
@@ -44,7 +44,7 @@ function TodoForm({ query, setQuery }) {
             type="datetime-local"
             value={due}
             onChange={(e) => setDue(e.target.value)}
-            className="w-full rounded-full bg-white/10 text-slate-100 border border-white/15 pl-12 pr-5 py-4 text-base outline-none focus:ring-4 focus:ring-cyan-500/25 focus:border-cyan-400"
+            className="w-full rounded-full bg-gradient-to-r from-white/5 to-white/3 text-slate-400 border border-white/10 pl-12 pr-5 py-4 text-base outline-none focus:ring-4 focus:ring-cyan-500/30 focus:border-cyan-400 shadow-lg backdrop-blur-sm"
           />
           <span className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-400 text-lg">📅</span>
         </div>
@@ -55,7 +55,7 @@ function TodoForm({ query, setQuery }) {
             placeholder="Search tasks..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full rounded-full bg-white/10 text-slate-100 placeholder:text-slate-300/70 border border-white/15 pl-12 pr-5 py-4 text-base outline-none focus:ring-4 focus:ring-fuchsia-500/25 focus:border-fuchsia-400"
+            className="w-full rounded-full bg-gradient-to-r from-white/5 to-white/3 text-black font-bold placeholder:text-slate-400/60 border border-white/10 pl-12 pr-5 py-4 text-base outline-none focus:ring-4 focus:ring-fuchsia-500/30 focus:border-fuchsia-400 shadow-lg backdrop-blur-sm"
           />
           <span className="absolute left-4 top-1/2 -translate-y-1/2 text-fuchsia-400 text-lg">🔍</span>
         </div>
