@@ -41,23 +41,32 @@ function TodoItem({ todo }) {
 
       {/* Task Content */}
       <div className="flex-1">
-        <input
-          type="text"
-          className={`w-full bg-transparent placeholder:text-slate-200/70 outline-none rounded-md px-2 py-1 border transition ${
-            isTodoEditable ? 'border-fuchsia-400 focus:ring-4 focus:ring-fuchsia-500/20' : 'border-transparent'
-          } ${displayTextClass}`}
-          value={todoMsg}
-          onChange={(e) => setTodoMsg(e.target.value)}
-          readOnly={!isTodoEditable}
-        />
-
-        {/* Due Date */}
-        {todo.due && !isTodoEditable && (
-          <div className="text-xs text-slate-400 mt-1 flex items-center gap-1">
-            <span>📅</span>
-            <span>Due: {new Date(todo.due).toLocaleString()}</span>
+        {isTodoEditable ? (
+          <input
+            type="text"
+            className={`w-full bg-transparent placeholder:text-slate-200/70 outline-none rounded-md px-2 py-1 border transition ${
+              'border-fuchsia-400 focus:ring-4 focus:ring-fuchsia-500/20'
+            } text-current`}
+            value={todoMsg}
+            onChange={(e) => setTodoMsg(e.target.value)}
+          />
+        ) : (
+          <div
+            className={`w-full rounded-md px-2 py-1 ${
+              todo.completed ? 'line-through text-slate-400' : 'text-slate-900 dark:text-slate-100 font-bold'
+            }`}
+          >
+            {todoMsg}
           </div>
         )}
+
+        {/* Due Date */}
+            {todo.due && !isTodoEditable && (
+              <div className="text-xs text-inherit mt-1 flex items-center gap-1">
+                <span>📅</span>
+                <span>Due: {new Date(todo.due).toLocaleString()}</span>
+              </div>
+            )}
 
         {/* Editable Due Date */}
         {isTodoEditable && (
